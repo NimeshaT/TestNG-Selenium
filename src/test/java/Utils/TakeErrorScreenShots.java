@@ -17,7 +17,7 @@ public class TakeErrorScreenShots {
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         //String filePath = "src/test/resources/ScreenShots/" + screenshotName + "_" + timestamp + ".png";
 
-        String filePath = "D:/MIT/SEM04/QA/QA_Assignment/src/test/resources/ScreenShots" + screenshotName + "_" + timestamp + ".png";
+        String filePath = "D:/MIT/SEM04/QA/QA_Assignment/src/test/resources/ScreenShots/" + screenshotName + "_" + timestamp + ".png";
         // Take the screenshot
         File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         File destFile = new File(filePath);
